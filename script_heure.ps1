@@ -4,7 +4,7 @@ Import-Module Net.Mail
 
 Install-WindowsFeature -Name FS-Resource-Manager, RSAT-FSRM-Mgmt
 
-#   Setting email options
+#Setting email options
 $MHT = @{
   WIN-IFC6RFMAGJHServer = 'WIN-IFC6RFMAGJH.firsttry.com'  
   FromEmailAddress  = 'Amélie.Lotte@firsttry.com'
@@ -13,7 +13,7 @@ $MHT = @{
 
 Set-FsrmSetting @MHT
 
-#   Sending a test email to check the setup
+#Sending a test email to check the setup
 $MHT = @{
   ToEmailAddress = 'Administrateur@firsttry.com'
   Confirm        = $false
