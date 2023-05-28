@@ -1,7 +1,7 @@
 Import-Module ActiveDirectory
 
 #Set settings of research
-$InactiveDays = 90  # Nombre de jours d'inactivité pour considérer un compte comme inactif
+$InactiveDays = 90
 
 #calculate the afk period
 $InactiveDate = (Get-Date).AddDays(-$InactiveDays)
